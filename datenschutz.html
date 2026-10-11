@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyLab Datenschutz</title>
+<meta name="description" content="Welche Daten MyLab speichert, welche Verbindungen es nach aussen gibt und was bewusst nicht dazugehört.">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .d-zone { fill: var(--grund); stroke: var(--linie); }
+  .d-box { fill: var(--karte); stroke: var(--linie); }
+  .d-app { fill: var(--akzent-weich); stroke: var(--akzent); }
+  .d-ext { fill: var(--karte); stroke: var(--text-3); }
+  .d-opt { fill: var(--karte); stroke: var(--text-3); stroke-dasharray: 5 4; }
+  .d-t { fill: var(--text); font: 600 14px -apple-system, BlinkMacSystemFont, sans-serif; }
+  .d-s { fill: var(--text-2); font: 12px -apple-system, BlinkMacSystemFont, sans-serif; }
+  .d-k { fill: var(--text-3); font: 600 12px -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: .06em; }
+  .d-l { stroke: var(--text-3); stroke-width: 1.5; fill: none; }
+  .d-lo { stroke: var(--text-3); stroke-width: 1.5; fill: none; stroke-dasharray: 5 4; }
+  .d-la { stroke: var(--akzent); stroke-width: 2; fill: none; }
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <div class="huelle">
+    <a class="marke" href="index.html"><img src="img/icon.png" alt="">MyLab</a>
+    <nav class="navi">
+      <a href="index.html">Vorstellung</a>
+      <a href="intranet.html">Intranet</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+      <a href="architektur.html">Architektur</a>
+      <a href="MyLab-Vorstellung.pdf">PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main class="textseite">
+  <div class="huelle">
+    <span class="pille gruen">Datenschutz</span>
+    <h1 style="margin-top:14px">Wohin gehen die Daten?</h1>
+    <p>MyLab verwaltet Material, keine Schüler:innen. Personendaten gibt es nur von Lehrpersonen und Mitarbeitenden, die sich anmelden: Name, Schul-Mailadresse und was sie reservieren oder ändern. Diese Seite zeigt, was gespeichert wird und welche Verbindungen es nach aussen gibt.</p>
+
+    <h2>Überblick</h2>
+    <div class="diagramm">
+      <svg viewBox="0 0 860 420" role="img" aria-label="Datenfluss: Browser und Handy sprechen mit dem MyLab-Server in der Schweiz oder EU. Der Server hat Datenbank und Dateispeicher. Verbindungen nach aussen gehen zu Microsoft für die Anmeldung, zu einem Mailserver für Reservations-Mails, optional zu einem Objektspeicher für Dateien und, geplant, zu MySchool oder dem Intranet für Lektionen.">
+        <rect class="d-box" x="20" y="150" width="170" height="80" rx="14"/>
+        <text class="d-t" x="38" y="182">Browser, Handy</text>
+        <text class="d-s" x="38" y="204">Lehrpersonen</text>
+        <path class="d-la" d="M190 190 H250"/>
+
+        <rect class="d-zone" x="250" y="20" width="300" height="380" rx="18"/>
+        <text class="d-k" x="272" y="50">SERVER (CH/EU)</text>
+        <rect class="d-app" x="272" y="70" width="256" height="64" rx="12"/>
+        <text class="d-t" x="290" y="98">MyLab</text>
+        <text class="d-s" x="290" y="118">Web-App, HTTPS</text>
+        <rect class="d-box" x="272" y="154" width="256" height="64" rx="12"/>
+        <text class="d-t" x="290" y="182">Datenbank</text>
+        <text class="d-s" x="290" y="202">Material, Reservationen, Historie</text>
+        <rect class="d-box" x="272" y="238" width="256" height="64" rx="12"/>
+        <text class="d-t" x="290" y="266">Dateien</text>
+        <text class="d-s" x="290" y="286">Fotos, Videos, Anleitungen</text>
+        <rect class="d-box" x="272" y="322" width="256" height="58" rx="12"/>
+        <text class="d-t" x="290" y="348">Backup</text>
+        <text class="d-s" x="290" y="366">ausserhalb des Servers</text>
+
+        <rect class="d-ext" x="620" y="40" width="230" height="64" rx="12"/>
+        <text class="d-t" x="638" y="68">Microsoft</text>
+        <text class="d-s" x="638" y="88">Anmeldung mit Schulkonto</text>
+        <path class="d-l" d="M550 72 H620"/>
+
+        <rect class="d-ext" x="620" y="124" width="230" height="64" rx="12"/>
+        <text class="d-t" x="638" y="152">Mailserver</text>
+        <text class="d-s" x="638" y="172">Reservations-Mails</text>
+        <path class="d-l" d="M550 156 H620"/>
+
+        <rect class="d-opt" x="620" y="208" width="230" height="64" rx="12"/>
+        <text class="d-t" x="638" y="236">Objektspeicher</text>
+        <text class="d-s" x="638" y="256">Dateien, falls eingerichtet</text>
+        <path class="d-lo" d="M550 270 C580 270 590 240 620 240"/>
+
+        <rect class="d-opt" x="620" y="292" width="230" height="64" rx="12"/>
+        <text class="d-t" x="638" y="320">MySchool / Intranet</text>
+        <text class="d-s" x="638" y="340">eigene Lektionen (geplant)</text>
+        <path class="d-lo" d="M620 324 H550"/>
+
+        <text class="d-s" x="20" y="370">Durchgezogen: Normalbetrieb.</text>
+        <text class="d-s" x="20" y="390">Gestrichelt: optional oder geplant.</text>
+      </svg>
+    </div>
+
+    <h2>Verbindungen nach aussen</h2>
+    <div class="tabelle">
+      <table>
+        <thead><tr><th>Ziel</th><th>Was geht raus</th><th>Wann</th><th>Bemerkung</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Microsoft (Entra ID)</strong></td><td>Weiterleitung zur Anmeldung; zurück kommen Name und Mailadresse</td><td>beim Login</td><td>nur die Berechtigungen <code>openid profile email</code>; auf Wunsch nur Mailadressen der Schule</td></tr>
+          <tr><td><strong>Mailserver</strong></td><td>Mail mit Gerät, Zeit, Person, Raum und Notiz einer Reservation</td><td>Reservation anlegen, verschieben, löschen</td><td>an die Kolleg:innen direkt davor, danach und gleichzeitig sowie an die Fachschafts-Adresse</td></tr>
+          <tr><td><strong>Objektspeicher</strong></td><td>hochgeladene Fotos, Videos und Dokumente</td><td>beim Hochladen</td><td>nur falls eingerichtet, sonst auf der Server-Platte; privat, Zugriff über zeitlich begrenzte Links</td></tr>
+          <tr><td><strong>MySchool / Intranet</strong></td><td>nichts; MyLab empfängt die eigenen Lektionen</td><td>geplant, siehe <a href="intranet.html">Intranet</a></td><td>freiwillig je Lehrperson</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Was MyLab speichert</h2>
+    <p><strong>Zu Personen:</strong> Name, Mailadresse, Fachschaft (falls gewählt), Zeit der Registrierung und des letzten Logins. Dazu, wer welche Reservation angelegt und wer welches Element erstellt oder geändert hat.</p>
+    <p><strong>Zum Material:</strong> Elemente mit Beschreibung, Ort, Kategorie, Tags, Praktika und Anhängen; Reservationen mit Zeit, Stückzahl, Raum, Lektion und Notiz; die Historie aller Änderungen.</p>
+    <p><strong>Im Browser:</strong> ein signiertes Anmelde-Cookie, die gewählte Ansicht, das Farbschema und die zuletzt verwendete Kategorie und Ort fürs Erfassen. Die App-Hülle liegt für schnelles Laden im Zwischenspeicher, Daten nicht.</p>
+
+    <h2>Was bewusst nicht dazugehört</h2>
+    <ul>
+      <li><strong>Keine Schülerdaten.</strong> Auch mit dem geplanten Sync kommt höchstens die Grösse einer Klasse als Zahl dazu.</li>
+      <li><strong>Keine Passwörter.</strong> Die Anmeldung läuft über Microsoft. MyLab sieht das Passwort nie.</li>
+      <li><strong>Keine Drittdienste.</strong> Keine Telemetrie, keine Analyse, keine Werbung, keine Schriften oder Skripte von fremden Servern.</li>
+      <li><strong>Kein Intranet-Passwort auf dem Server</strong>, solange die Lektionen über MySchool kommen.</li>
+    </ul>
+
+    <h2>Sicherheit</h2>
+    <ul>
+      <li>Verbindungen nur über HTTPS; das Anmelde-Cookie ist signiert, für Skripte unlesbar und nur für MyLab gültig.</li>
+      <li>Ohne Anmeldung ist nichts sichtbar, auch keine Dateien.</li>
+      <li>Datenbank und Dateien werden regelmässig an einen Ort ausserhalb des Servers gesichert.</li>
+    </ul>
+
+    <h2>Aufbewahrung</h2>
+    <ul>
+      <li>Gelöschte Elemente bleiben im Papierkorb, bis jemand sie dort endgültig löscht; dann verschwinden auch ihre Dateien.</li>
+      <li>Die Historie bleibt, solange das Element existiert.</li>
+      <li>Vergangene Reservationen bleiben stehen, damit nachvollziehbar ist, wer ein Gerät zuletzt hatte.</li>
+      <li>Wer die Schule verlässt, kann sich nicht mehr anmelden. Das Konto lässt sich auf Wunsch entfernen.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="fuss">
+  <div class="huelle">
+    <span>MyLab · Inventar und Ausleihe für die Naturwissenschaften</span>
+    <span><a href="index.html">Zur Vorstellung</a></span>
+  </div>
+</footer>
+</body>
+</html>

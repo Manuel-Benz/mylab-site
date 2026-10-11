@@ -38,14 +38,14 @@
   <div class="huelle">
     <span class="pille indigo">Architektur</span>
     <h1 style="margin-top:14px">Wie MyLab gebaut ist</h1>
-    <p>Ein Überblick für alle, die wissen wollen, wie MyLab gebaut ist. Anders als MySchool ist MyLab keine Mac-App, sondern eine Web-App auf einem Server: Die Sammlung gehört allen drei Fachschaften und muss von jedem Gerät aus gleich aussehen.</p>
+    <p>Für alle, die es genauer wissen wollen. Anders als MySchool ist MyLab keine Mac-App, sondern eine Web-App auf einem Server: Die Sammlung gehört allen drei Fachschaften und muss auf jedem Gerät gleich aussehen.</p>
 
     <h2>Grundsätze</h2>
     <ul>
       <li><strong>Ein Code für Desktop und Handy.</strong> Eine Web-App, als App auf dem Home-Bildschirm installierbar. Mobile zuerst fürs Suchen, Fotografieren und Reservieren, Desktop für die längere Erfassung.</li>
-      <li><strong>Einfach betreibbar.</strong> Ein Server, eine Datenbankdatei, ein Ordner mit Dateien. Sichern heisst kopieren, umziehen heisst kopieren und starten.</li>
+      <li><strong>Einfach betreibbar.</strong> Ein Server, eine Datenbankdatei, ein Ordner mit Dateien. Sichern heisst kopieren, zügeln heisst kopieren und starten.</li>
       <li><strong>Kein Build-Schritt, kein Framework.</strong> Der Code im Repository ist der Code, der im Browser läuft.</li>
-      <li><strong>Der Server rechnet.</strong> Filtern, Zählen und Konfliktprüfung passieren auf dem Server, nie im Browser über eine gekürzte Kopie. So bleibt MyLab auch mit 10 000 Elementen schnell.</li>
+      <li><strong>Der Server rechnet.</strong> Filtern, Zählen und Konfliktprüfung laufen auf dem Server, nie im Browser über eine gekürzte Kopie. So bleibt MyLab auch mit 10 000 Elementen schnell.</li>
     </ul>
 
     <h2>Bausteine</h2>
@@ -120,11 +120,11 @@
 
     <h2>Suchen und filtern</h2>
     <p>Die Volltextsuche nutzt den FTS5-Index von SQLite über Titel, Beschreibung und Tags; er wird nach jeder Änderung eines Elements neu geschrieben. Die Filter links liefern ihre Zähler aus derselben Abfrage. Die Liste lädt 200 Zeilen und blättert dann seitenweise nach. Mit einer Testdatenbank aus 10 000 Elementen dauert eine gefilterte Liste samt Zählern 33 ms.</p>
-    <p>Ein ungültiger Filter in einem Link entfernt den Filter nie, sondern zeigt nichts: Ein kaputter Link soll nicht plötzlich die ganze Sammlung zeigen.</p>
+    <p>Ein ungültiger Filter in einem Link zeigt nichts statt alles: Ein kaputter Link soll nicht plötzlich die ganze Sammlung zeigen.</p>
 
     <h2>Reservieren</h2>
     <p>Zeiten sind lokale Schulzeit ohne Zeitzonen-Umrechnung, das Lektionsraster (elf Lektionen à 45 Minuten) steht fest in der App. Eine einzige Funktion auf dem Server prüft Konflikte: Sie zählt, wie viele Stück zu jedem Zeitpunkt gleichzeitig unterwegs sind, und vergleicht mit der Anzahl des Elements. Bei Konflikt sucht sie die nächsten freien Zeiträume derselben Länge und überspringt Wochenenden.</p>
-    <p>Auf- und Abbauzeit sind bewusst ein Richtwert im Dialog und keine Sperre. Ob das Zimmer vorher frei ist, kann MyLab erst mit dem <a href="intranet.html">Intranet-Sync</a> wissen.</p>
+    <p>Auf- und Abbauzeit sind bewusst nur ein Richtwert im Dialog, keine Sperre. Ob das Zimmer vorher frei ist, weiss MyLab erst mit dem <a href="intranet.html">Intranet-Sync</a>.</p>
 
     <h2>Dateien</h2>
     <ul>

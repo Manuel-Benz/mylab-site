@@ -41,15 +41,15 @@
   <div class="huelle">
     <span class="pille indigo">Intranet</span>
     <h1 style="margin-top:14px">MyLab und das Intranet</h1>
-    <p>MyLab funktioniert ohne Intranet: Reserviert wird im festen Lektionsraster der Schule. Mit dem Stundenplan, den Ausfällen und dem Schulkalender aus dem Intranet wird es deutlich bequemer. Diese Seite beschreibt, wie die Anbindung aussehen soll. Gebaut ist sie noch nicht; sie folgt nach dem Pilot als eigenes Modul.</p>
+    <p>MyLab läuft auch ohne Intranet: Reserviert wird im fixen Lektionsraster der Schule. Mit Stundenplan, Ausfällen und Schulkalender aus dem Intranet wird es aber deutlich bequemer. Hier steht, wie ich mir die Anbindung vorstelle. Gebaut ist sie noch nicht, sie kommt nach dem Pilot als eigenes Modul.</p>
 
-    <div class="hinweis"><strong>Kurz:</strong> MySchool holt die Daten schon heute aus dem Intranet. Es schickt nur die eigenen Lektionen einer Lehrperson an MyLab, ohne Schülerdaten und ohne dass ein Intranet-Passwort auf dem MyLab-Server liegt.</div>
+    <div class="hinweis"><strong>Kurz:</strong> MySchool holt die Daten schon heute aus dem Intranet. Es schickt nur deine eigenen Lektionen an MyLab: keine Schülerdaten, kein Intranet-Passwort auf dem MyLab-Server.</div>
 
     <h2>Grundsätze</h2>
     <ul>
-      <li><strong>MyLab läuft auch ohne Sync.</strong> Das Lektionsraster bleibt; der Sync ist eine zusätzliche Datenquelle, keine Voraussetzung.</li>
-      <li><strong>Die Quelle ist austauschbar.</strong> Der Zugang zum Intranet ist nicht garantiert. Deshalb spricht MyLab mit einem Adapter, hinter dem MySchool, ein Server-Zugang oder ein Stundenplan-Export stecken kann.</li>
-      <li><strong>Nur lesen.</strong> MyLab schreibt nichts ins Intranet. Zimmer bucht weiterhin MySchool, mit dessen Nachfrage und Protokoll.</li>
+      <li><strong>MyLab läuft auch ohne Sync.</strong> Das Lektionsraster bleibt. Der Sync ist eine zusätzliche Quelle, keine Voraussetzung.</li>
+      <li><strong>Die Quelle ist austauschbar.</strong> Der Zugang zum Intranet ist nicht garantiert. Deshalb spricht MyLab mit einem Adapter: Dahinter kann MySchool stecken, ein Server-Zugang oder ein Stundenplan-Export.</li>
+      <li><strong>Nur lesen.</strong> MyLab schreibt nichts ins Intranet. Zimmer bucht weiterhin MySchool (mit Nachfrage und Protokoll).</li>
       <li><strong>Nur das Nötigste.</strong> Keine Namen von Schüler:innen, keine Noten, keine Absenzen. Höchstens die Grösse einer Klasse als Zahl.</li>
     </ul>
 
@@ -58,7 +58,7 @@
       <table>
         <thead><tr><th>Frage</th><th>MyLab heute</th><th>Mit dem Intranet</th></tr></thead>
         <tbody>
-          <tr><td>Wann unterrichte ich die 4c?</td><td>weiss es nicht, man tippt die Lektion an</td><td>eigene Lektionen der Woche zur Auswahl</td></tr>
+          <tr><td>Wann unterrichte ich die 4c?</td><td>weiss es nicht, du tippst die Lektion an</td><td>eigene Lektionen der Woche zur Auswahl</td></tr>
           <tr><td>In welchem Zimmer?</td><td>Freitext «Raum»</td><td>Zimmer aus dem Stundenplan</td></tr>
           <tr><td>Ist das Zimmer vorher frei für den Aufbau?</td><td>weiss es nicht, nur ein Hinweis</td><td>frei oder belegt, je Lektion</td></tr>
           <tr><td>Fällt die Lektion aus?</td><td>weiss es nicht</td><td>Ausfall erkannt, Reservation zum Freigeben</td></tr>
@@ -125,19 +125,19 @@
     </div>
 
     <h2>Drei mögliche Quellen</h2>
-    <p>Hinter dem Adapter kann jede dieser Quellen stecken, auch mehrere nebeneinander. Begonnen wird mit der ersten.</p>
+    <p>Hinter dem Adapter kann jede dieser Quellen stecken, auch mehrere nebeneinander. Anfangen würde ich mit der ersten.</p>
     <div class="weg" style="margin-top:16px">
       <div class="karte">
         <h3><span class="pille gruen">Empfohlen</span> Brücke über MySchool</h3>
-        <p>MySchool synchronisiert Stundenplan, Ausfälle und Schulkalender schon heute auf den Mac der Lehrperson. Eine neue Einstellung schickt die eigenen Lektionen der nächsten Wochen an MyLab, mit einem persönlichen Schlüssel aus «Ich».</p>
+        <p>MySchool holt Stundenplan, Ausfälle und Schulkalender schon heute auf den Mac der Lehrperson. Eine neue Einstellung schickt die eigenen Lektionen der nächsten Wochen an MyLab, mit einem persönlichen Schlüssel aus «Ich».</p>
         <div class="vorteile">
-          <div><b>Dafür</b><ul><li>Kein Intranet-Passwort auf dem Server</li><li>Baut auf einem erprobten Sync auf</li><li>Jede Lehrperson entscheidet selbst</li></ul></div>
+          <div><b>Dafür</b><ul><li>Kein Intranet-Passwort auf dem Server</li><li>Baut auf einem erprobten Sync auf</li><li>Jede und jeder entscheidet selbst</li></ul></div>
           <div><b>Dagegen</b><ul><li>Nur für Lehrpersonen mit MySchool</li><li>Aktualisiert, wenn der Mac läuft</li><li>Keine Zimmerbelegung fremder Zimmer, ausser MySchool fragt sie ab</li></ul></div>
         </div>
       </div>
       <div class="karte">
         <h3><span class="pille indigo">Später</span> Server-Adapter</h3>
-        <p>MyLab spricht die Schnittstelle des Intranets selbst an, mit einem eigenen Zugang. Dann stehen allen der Stundenplan, die Zimmerbelegung und der Schulkalender zur Verfügung, auch ohne MySchool.</p>
+        <p>MyLab spricht die Schnittstelle des Intranets selbst an, mit einem eigenen Zugang. Dann haben alle Stundenplan, Zimmerbelegung und Schulkalender, auch ohne MySchool.</p>
         <div class="vorteile">
           <div><b>Dafür</b><ul><li>Für alle Lehrpersonen</li><li>Zimmerbelegung für den Aufbau-Hinweis</li><li>Immer aktuell</li></ul></div>
           <div><b>Dagegen</b><ul><li>Braucht einen Zugang und das Einverständnis der Schule</li><li>Zugang nicht garantiert</li></ul></div>
@@ -145,7 +145,7 @@
       </div>
       <div class="karte">
         <h3><span class="pille messing">Rückfall</span> Stundenplan-Export</h3>
-        <p>Wer weder MySchool nutzt noch einen Server-Adapter hat, lädt den eigenen Stundenplan als Kalenderdatei hoch oder abonniert ihn. Ausfälle kommen so nur mit, wenn der Export sie enthält.</p>
+        <p>Ohne MySchool und ohne Server-Adapter lädst du deinen Stundenplan als Kalenderdatei hoch oder abonnierst ihn. Ausfälle kommen so nur mit, wenn der Export sie enthält.</p>
       </div>
     </div>
 
@@ -166,10 +166,10 @@
     <p style="margin-top:14px">Nie übertragen werden Namen, Fotos, Kontaktdaten, Noten oder Absenzen von Schüler:innen.</p>
 
     <h2>Was MySchool davon hat</h2>
-    <p>Die Verbindung lohnt sich in beide Richtungen. MySchool liest umgekehrt die eigenen Reservationen aus MyLab:</p>
+    <p>Das lohnt sich in beide Richtungen: MySchool liest umgekehrt die eigenen Reservationen aus MyLab.</p>
     <ul>
       <li><strong>Heute:</strong> Bei der Lektion steht, was reserviert ist und wo es steht.</li>
-      <li><strong>Kursplan:</strong> Eine Materialzeile verlinkt das Gerät in MyLab. Verschiebt man die Lektion im Plan, zieht die Reservation mit.</li>
+      <li><strong>Kursplan:</strong> Eine Materialzeile verlinkt das Gerät in MyLab. Verschiebst du die Lektion im Plan, zieht die Reservation mit.</li>
       <li><strong>Kalender:</strong> Reservationen erscheinen neben den Lektionen.</li>
       <li><strong>Zimmer:</strong> Labor und Material lassen sich zusammen buchen, das Zimmer wie bisher über MySchool im Intranet.</li>
     </ul>

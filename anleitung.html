@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyLab Anleitung</title>
+<meta name="description" content="Anleitung zu MyLab: anmelden, Material finden und erfassen, nach Lektion reservieren, Kalender, Stammdaten, Historie und Papierkorb.">
+<link rel="icon" href="img/icon.png?v=2">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<header class="kopf">
+  <div class="huelle">
+    <a class="marke" href="index.html"><img src="img/icon.png?v=2" alt="">MyLab</a>
+    <nav class="navi">
+      <a href="index.html">Vorstellung</a>
+      <a href="anleitung.html" aria-current="page">Anleitung</a>
+      <a href="intranet.html">Intranet</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="anleitung">
+  <div class="huelle anleitung-raster">
+
+    <nav class="inhalt" aria-label="Inhalt">
+      <details open>
+        <summary>Inhalt</summary>
+        <ol>
+          <li><a href="#start">Erste Schritte</a></li>
+          <li><a href="#bedienung">Bedienung</a></li>
+          <li><a href="#finden">Material finden</a></li>
+          <li><a href="#erfassen">Element erfassen</a></li>
+          <li><a href="#bearbeiten">Bearbeiten &amp; Anhänge</a></li>
+          <li><a href="#reservieren">Reservieren</a></li>
+          <li><a href="#aendern">Reservation ändern</a></li>
+          <li><a href="#kalender">Kalender</a></li>
+          <li><a href="#stammdaten">Stammdaten</a></li>
+          <li><a href="#historie">Historie &amp; Papierkorb</a></li>
+          <li><a href="#mails">Mails</a></li>
+          <li><a href="#probleme">Wenn etwas hakt</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <div class="text">
+      <span class="pille gruen">Anleitung</span>
+      <h1 style="margin-top:14px">So geht’s</h1>
+      <p class="einleitung">Vom ersten Login bis zur Reservation fürs Praktikum: die häufigsten Handgriffe in MyLab, Schritt für Schritt. Wer nur etwas Bestimmtes sucht, springt über das Inhaltsverzeichnis direkt hin. Alle Bilder stammen aus der Demo-Version mit erfundenen Daten.</p>
+
+      <!-- Erste Schritte -->
+      <section id="start">
+        <h2>Erste Schritte</h2>
+        <h3>Anmelden</h3>
+        <ol class="schritte">
+          <li>Die Adresse von MyLab im Browser öffnen, am Computer oder auf dem Handy.</li>
+          <li><b>Mit Microsoft anmelden</b> und das Schulkonto wählen. Ein eigenes Passwort für MyLab gibt es nicht.</li>
+          <li>Beim ersten Login entsteht das Konto von selbst. Einrichten muss man nichts.</li>
+        </ol>
+
+        <h3>Fachschaft festlegen</h3>
+        <p>Unter <b>Ich › Profil</b> die eigene Fachschaft wählen und <b>Speichern</b>. Danach zeigen Inventar und Kalender standardmässig das eigene Fach, und neue Elemente bekommen es als Vorgabe. Die anderen Fächer bleiben mit einem Klick auf <b>Alle</b> erreichbar.</p>
+
+        <h3>Als App aufs Handy</h3>
+        <ol class="schritte">
+          <li><b>iPhone:</b> MyLab in Safari öffnen, <b>Teilen</b> antippen, dann <b>Zum Home-Bildschirm</b>.</li>
+          <li><b>Android:</b> MyLab in Chrome öffnen, im Menü <b>App installieren</b> oder <b>Zum Startbildschirm hinzufügen</b>.</li>
+        </ol>
+        <p class="tipp"><b>Hell oder dunkel?</b> MyLab folgt der Einstellung des Geräts. Farbschema und Akzentfarbe lassen sich unter <b>Ich</b> pro Gerät ändern.</p>
+      </section>
+
+      <!-- Bedienung -->
+      <section id="bedienung">
+        <h2>Bedienung</h2>
+        <p>Am Computer stehen die Bereiche oben in der dunklen Leiste, auf dem Handy unten: <b>Inventar</b>, <b>Kalender</b>, <b>Stammdaten</b> und <b>Ich</b>. Das Suchfeld oben ist überall erreichbar. Der runde <b>+</b>-Knopf unten rechts im Inventar legt ein neues Element an.</p>
+        <div class="tabelle">
+          <table class="kuerzel">
+            <tr><th>Bereich</th><th>Wofür</th></tr>
+            <tr><td><b>Inventar</b></td><td>Material suchen, filtern, öffnen und erfassen</td></tr>
+            <tr><td><b>Kalender</b></td><td>Was diese Woche unterwegs ist, pro Fachschaft oder für alle</td></tr>
+            <tr><td><b>Stammdaten</b></td><td>Fachschaften, Kategorien, Orte, Praktika und Tags verwalten</td></tr>
+            <tr><td><b>Ich</b></td><td>Eigene Reservationen, zuletzt geänderte Elemente, Profil, Farbschema, Papierkorb</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Finden -->
+      <section id="finden">
+        <h2>Material finden</h2>
+        <p>Das Inventar zeigt alle Elemente als Kacheln mit Bild, Titel und Ort.</p>
+        <figure class="fenster"><img src="img/liste.webp" width="2560" height="1600" loading="lazy" alt="Inventarliste mit Filtern links und Kacheln rechts"></figure>
+        <ol class="schritte">
+          <li><b>Suchen:</b> Ins Suchfeld oben tippen. Gesucht wird in Titel, Beschreibung und Tags, die Liste passt sich beim Tippen an.</li>
+          <li><b>Fach wählen:</b> Die Pillen <b>Alle</b>, <b>Physik</b>, <b>Biologie</b>, <b>Chemie</b> über der Liste.</li>
+          <li><b>Filtern:</b> Links nach Kategorie, Ort, Praktikum oder Tags; die Zahl daneben zeigt, wie viele Elemente übrig bleiben. Mehrere Tags gelten zusammen. Auf dem Handy öffnet der Knopf <b>Filter</b> dieselbe Auswahl.</li>
+          <li><b>Ansicht:</b> Oben rechts zwischen <b>Kacheln</b> und <b>Liste</b> wechseln, Grösse <b>S</b>, <b>M</b> oder <b>L</b>.</li>
+        </ol>
+        <p class="tipp">Grosse Trefferlisten laden in Portionen. Am Ende der Liste holt <b>Mehr anzeigen</b> die nächsten.</p>
+      </section>
+
+      <!-- Erfassen -->
+      <section id="erfassen">
+        <h2>Element erfassen</h2>
+        <p>Am schnellsten geht es vor dem offenen Schrank mit dem Handy. Nur Titel und Fachschaft sind Pflicht.</p>
+        <div class="handys" style="margin:22px 0">
+          <div class="handy"><img src="img/h-neu.webp" width="780" height="1688" loading="lazy" alt="Formular «Neues Element» auf dem Handy"></div>
+          <div class="handy"><img src="img/h-detail.webp" width="780" height="1688" loading="lazy" alt="Fertig erfasstes Element auf dem Handy"></div>
+        </div>
+        <ol class="schritte">
+          <li>Im Inventar auf <b>+</b> tippen.</li>
+          <li><b>Foto</b> antippen und das Gerät fotografieren. Mehrere Fotos gehen auch; das erste wird zum Titelbild.</li>
+          <li><b>Titel</b> eintragen, etwa «Luftkissenbahn 2 m».</li>
+          <li><b>Kategorie</b> und <b>Ort</b> wählen. MyLab schlägt die vom letzten Mal vor. Fehlt etwas, legt <b>+ Neue Kategorie …</b> bzw. <b>+ Neuer Ort …</b> am Ende der Auswahl es direkt an.</li>
+          <li><b>Speichern</b>.</li>
+        </ol>
+        <h3>Mehr Angaben</h3>
+        <p>Unter <b>Mehr Angaben</b> stehen die übrigen Felder, am bequemsten am Computer:</p>
+        <ul>
+          <li><b>Beschreibung</b> mit Aufbau, Hinweisen und Stolpersteinen. <code>**fett**</code> und Listen mit <code>-</code> werden formatiert.</li>
+          <li><b>Anzahl</b>, etwa 16 bei einem Klassensatz Mikroskope. Dann lassen sich einzelne Stück reservieren.</li>
+          <li><b>Inventar-Nr.</b>, falls vorhanden.</li>
+          <li><b>Aufbau davor</b> und <b>Abbau danach</b> in Minuten. MyLab erinnert beim Reservieren daran.</li>
+          <li><b>Tags</b>: tippen und mit <kbd>↩</kbd> oder Komma bestätigen.</li>
+          <li><b>Praktika</b> und <b>Ähnliche Elemente</b>, etwa Luftkissenbahn und Lichtschranken.</li>
+        </ul>
+      </section>
+
+      <!-- Bearbeiten -->
+      <section id="bearbeiten">
+        <h2>Bearbeiten &amp; Anhänge</h2>
+        <p>Auf der Seite eines Elements oben rechts <b>Bearbeiten</b>. Alle Felder lassen sich ändern, auch Fachschaft, Kategorie und Ort.</p>
+        <figure class="fenster"><img src="img/detail.webp" width="2560" height="1600" loading="lazy" alt="Detailseite der Luftkissenbahn mit Belegung"></figure>
+        <ul>
+          <li><b>Foto</b> und <b>Dateien</b> laden Bilder, Videos, PDF- und Word-Dateien hoch. Bilder werden automatisch verkleinert.</li>
+          <li><b>Link</b> fügt etwa ein YouTube-Video hinzu. Links lassen sich erst nach dem ersten Speichern anhängen.</li>
+          <li>Neben jedem Anhang: <b>Als Titelbild</b>, <b>Umbenennen</b>, <b>Entfernen</b>.</li>
+        </ul>
+        <p class="tipp"><b>Grosse Videos:</b> Bis 500 MB lassen sie sich hochladen. Längere am besten auf YouTube oder Stream ablegen und als Link anhängen.</p>
+      </section>
+
+      <!-- Reservieren -->
+      <section id="reservieren">
+        <h2>Reservieren</h2>
+        <p>Reserviert wird auf der Seite des Elements. Die Belegung rechts zeigt vier Wochen; jede Tageskachel hat einen Balken für die Tageszeit: rot belegt, hell teilweise belegt, blau die eigenen.</p>
+        <h3>Nach Lektion</h3>
+        <ol class="schritte">
+          <li>Den gewünschten Tag in der Belegung antippen. Es öffnet sich das Lektionsraster des Tages.</li>
+          <li>Die erste Lektion antippen. Für eine Doppellektion die zweite antippen, oder den Block am unteren Rand länger ziehen.</li>
+          <li>Den Block verschieben, falls die Zeit noch nicht stimmt. <b>Heute</b>, <b>Morgen</b>, <b>+1 Tag</b> und <b>+1 Woche</b> wechseln den Tag.</li>
+          <li>Bei mehreren Stück die <b>Stückzahl</b> wählen, dazu <b>Raum</b>, <b>Klasse / Lektion</b> und eine <b>Notiz</b>.</li>
+          <li><b>Reservieren</b>.</li>
+        </ol>
+        <figure class="fenster"><img src="img/reservieren.webp" width="2560" height="1720" loading="lazy" alt="Lektionsraster mit fremden Reservationen und der gewählten 4. und 5. Lektion"></figure>
+        <h3>Für längere Zeit</h3>
+        <p>Oben im Dialog auf <b>Zeitraum</b> wechseln, Von und Bis setzen oder <b>Ganze Tage</b> wählen. So geht auch eine Ausleihe über die Woche oder für eine Exkursion.</p>
+        <h3>Wenn es schon belegt ist</h3>
+        <p>MyLab zeigt sofort <b>Bereits reserviert</b> mit Namen und die <b>nächsten freien Zeiträume</b>. Ein Klick auf einen Vorschlag verschiebt die Reservation dorthin. Ist es mit der Kollegin abgesprochen, setzt <b>Trotzdem eintragen</b> die Reservation dennoch.</p>
+        <h3>Auf- und Abbau</h3>
+        <p>Braucht ein Gerät Aufbauzeit, erscheint ein Hinweis mit <b>Lektion davor</b> und <b>Lektion danach</b>. Ein Tipp nimmt sie mit dazu. Ob das Zimmer dann frei ist, prüft MyLab noch nicht.</p>
+        <div class="handys" style="margin:22px 0">
+          <div class="handy"><img src="img/h-reservieren.webp" width="780" height="1688" loading="lazy" alt="Reservieren auf dem Handy mit Hinweis auf 20 Minuten Aufbau und den Knöpfen Lektion davor und Lektion danach"></div>
+        </div>
+      </section>
+
+      <!-- Ändern -->
+      <section id="aendern">
+        <h2>Reservation ändern oder löschen</h2>
+        <p>Die eigenen Reservationen stehen unter <b>Ich › Meine Reservationen</b>, alle eines Geräts auf seiner Seite unter <b>Kommende Reservationen</b>. Der Stift öffnet die Reservation.</p>
+        <figure class="fenster"><img src="img/ich.webp" width="2560" height="1600" loading="lazy" alt="Seite Ich mit den eigenen Reservationen"></figure>
+        <ul>
+          <li><b>Eigene Reservation:</b> Zeit, Stückzahl, Raum oder Notiz ändern und <b>Speichern</b>, oder <b>Löschen</b>.</li>
+          <li><b>Reservation einer Kollegin:</b> ändern geht, etwa nach Absprache eine andere Lektion. Die Kollegin bekommt sofort eine Mail. <b>Löschen kann nur, wer reserviert hat.</b></li>
+        </ul>
+        <p class="tipp"><b>Gerät früher zurück?</b> Die eigene Reservation verkürzen oder löschen, dann sehen alle, dass es wieder frei ist.</p>
+      </section>
+
+      <!-- Kalender -->
+      <section id="kalender">
+        <h2>Kalender</h2>
+        <p>Der Bereich <b>Kalender</b> zeigt eine Woche: pro Tag, welches Gerät wann bei wem ist, mit Raum, Lektion und Stückzahl.</p>
+        <figure class="fenster"><img src="img/woche.webp" width="2560" height="1600" loading="lazy" alt="Wochenübersicht mit Reservationen aus drei Fachschaften"></figure>
+        <ul>
+          <li>Mit den Pfeilen blättern, <b>Heute</b> springt zurück zur aktuellen Woche.</li>
+          <li>Die Pillen wählen das Fach oder <b>Alle</b>.</li>
+          <li>Ein Klick auf das Gerät öffnet seine Seite, der Stift die Reservation.</li>
+        </ul>
+      </section>
+
+      <!-- Stammdaten -->
+      <section id="stammdaten">
+        <h2>Stammdaten</h2>
+        <p>Unter <b>Stammdaten</b> legen die Fachschaften ihre Ordnung fest. Reiter: <b>Fachschaften</b>, <b>Kategorien</b>, <b>Orte</b>, <b>Praktika</b>, <b>Tags</b>.</p>
+        <figure class="fenster"><img src="img/stammdaten.webp" width="2560" height="1600" loading="lazy" alt="Stammdaten, Reiter Orte, als Baum mit Zimmern, Schränken und Regalen"></figure>
+        <div class="tabelle">
+          <table class="kuerzel">
+            <tr><th>Knopf</th><th>Was er tut</th></tr>
+            <tr><td><b>+</b></td><td>Unterpunkt anlegen, etwa ein Regal in einem Schrank</td></tr>
+            <tr><td><b>Stift</b></td><td>Umbenennen</td></tr>
+            <tr><td><b>Kreuzpfeil</b></td><td>Verschieben unter einen anderen Eintrag</td></tr>
+            <tr><td><b>Pfeil nach oben</b></td><td>In der Reihenfolge nach oben</td></tr>
+            <tr><td><b>×</b></td><td>Löschen. Unterpunkte und Elemente rutschen eine Stufe hoch, nichts geht verloren.</td></tr>
+          </table>
+        </div>
+        <ul>
+          <li><b>Kategorien</b> haben drei Stufen und gehören zu einer Fachschaft.</li>
+          <li><b>Orte</b> gelten für alle: Raum › Schrank › Regal, oder wie es bei euch heisst.</li>
+          <li><b>Tags</b> lassen sich umbenennen, einer anderen Fachschaft zuordnen und <b>zusammenlegen</b>, etwa «Messgerät» und «Messgeräte».</li>
+          <li>Bei einer <b>Fachschaft</b> lässt sich die <b>Fachschafts-Mail</b> eintragen, die bei Reservationen eine Kopie bekommt.</li>
+        </ul>
+      </section>
+
+      <!-- Historie -->
+      <section id="historie">
+        <h2>Historie &amp; Papierkorb</h2>
+        <h3>Eine Änderung rückgängig machen</h3>
+        <ol class="schritte">
+          <li>Auf der Seite des Elements ganz unten <b>Änderungshistorie</b> aufklappen.</li>
+          <li>Jeder Eintrag zeigt, wer wann welches Feld geändert hat, mit altem und neuem Wert.</li>
+          <li><b>Rückgängig</b> setzt das Feld auf den alten Wert zurück.</li>
+        </ol>
+        <h3>Element löschen und wiederherstellen</h3>
+        <ol class="schritte">
+          <li>Im Element <b>Bearbeiten</b>, unten <b>Löschen</b>. Das Element landet im Papierkorb.</li>
+          <li>Unter <b>Ich › Papierkorb</b> lässt es sich <b>wiederherstellen</b>.</li>
+          <li>Erst <b>endgültig löschen</b> im Papierkorb entfernt es samt Fotos und Dateien.</li>
+        </ol>
+      </section>
+
+      <!-- Mails -->
+      <section id="mails">
+        <h2>Mails</h2>
+        <p>MyLab schreibt Mails, damit niemand vor einem leeren Schrank steht:</p>
+        <ul>
+          <li>Beim <b>Anlegen, Verschieben oder Löschen</b> einer Reservation an die Kolleg:innen, die das Gerät direkt davor, danach oder gleichzeitig haben, und an die Fachschafts-Adresse.</li>
+          <li>Ändert jemand anderes eine Reservation, bekommt die Person, der sie gehört, eine Mail mit der neuen und der alten Zeit.</li>
+        </ul>
+      </section>
+
+      <!-- Probleme -->
+      <section id="probleme">
+        <h2>Wenn etwas hakt</h2>
+        <dl class="faq">
+          <dt>Ich sehe nur ein Fach.</dt>
+          <dd>Das ist die eigene Fachschaft als Standard. Die Pille <b>Alle</b> über der Liste zeigt alles.</dd>
+          <dt>Der Knopf «Löschen» fehlt bei einer Reservation.</dt>
+          <dd>Es ist die Reservation von jemand anderem. Löschen kann nur, wer sie angelegt hat. Ändern geht; die Person bekommt eine Mail.</dd>
+          <dt>Beim Reservieren steht «Bereits reserviert».</dt>
+          <dd>Das Gerät ist in dieser Zeit schon ganz unterwegs. Darunter stehen die nächsten freien Zeiträume; nach Absprache setzt <b>Trotzdem eintragen</b> die Reservation dennoch.</dd>
+          <dt>Ein Foto lädt nicht hoch.</dt>
+          <dd>Bilder dürfen bis 25 MB gross sein, Dokumente 50 MB, Videos 500 MB. Bei schwachem WLAN hilft es, das Foto später am Computer hochzuladen.</dd>
+          <dt>Ich habe etwas versehentlich geändert.</dt>
+          <dd>In der <b>Änderungshistorie</b> des Elements den Eintrag suchen und <b>Rückgängig</b> wählen. Gelöschte Elemente liegen unter <b>Ich › Papierkorb</b>.</dd>
+          <dt>Die App sieht nach einem Update komisch aus.</dt>
+          <dd>Die Seite einmal neu laden. Auf dem Handy die App schliessen und neu öffnen.</dd>
+        </dl>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="fuss">
+  <div class="huelle">
+    <span>MyLab · Inventar und Ausleihe für die Naturwissenschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
+    <span><a href="architektur.html">Architektur</a> · <a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
+  </div>
+</footer>
+</body>
+</html>

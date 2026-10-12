@@ -140,11 +140,6 @@ p { margin: 0; }
   background: var(--akzent); }
 
 /* Kombi-Karten („Mehr als die Summe der Daten") */
-.karte.kombi { display: flex; flex-direction: column; }
-.karte.kombi p { flex: 1; }
-.quellen { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-.quellen .pille { font-size: .72rem; }
-.nachsatz { margin-top: 28px; color: var(--text-2); max-width: 820px; }
 
 /* Vorher / Nachher */
 .vergleich { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 28px; }
@@ -182,7 +177,6 @@ tr:last-child td { border-bottom: 0; }
 .tabelle { overflow-x: auto; }
 .diagramm { background: var(--karte); border: 1px solid var(--linie); border-radius: var(--radius); padding: 24px; }
 .diagramm svg { width: 100%; height: auto; display: block; }
-.hinweis { background: var(--akzent-weich); border-radius: var(--radius); padding: 16px 20px; color: var(--text); margin: 20px 0; }
 
 
 /* Handys: Screenshots in schmalem Rahmen, nebeneinander */
@@ -200,18 +194,6 @@ tr:last-child td { border-bottom: 0; }
 .vorher-nachher ul { margin: 12px 0 0; padding-left: 20px; color: var(--text-2); }
 .vorher-nachher li { margin: 5px 0; }
 .karte.mit-sync { border-color: color-mix(in srgb, var(--akzent) 45%, var(--linie)); }
-.karte.kombi .heute { margin-top: 10px; font-size: .9rem; color: var(--text-3); flex: none; }
-.karte.kombi .heute b { color: var(--text-2); font-weight: 600; }
-.ablauf { counter-reset: schritt; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
-.ablauf .karte { position: relative; padding-top: 52px; }
-.ablauf .karte::before { counter-increment: schritt; content: counter(schritt); position: absolute; top: 18px; left: 24px;
-  width: 26px; height: 26px; border-radius: 50%; background: var(--akzent); color: #fff; font-weight: 700; font-size: .85rem;
-  display: grid; place-items: center; }
-.weg { display: grid; grid-template-columns: minmax(0,1fr); gap: 16px; }
-.weg .karte h3 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.weg .vorteile { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; margin-top: 12px; }
-.weg .vorteile ul { margin: 6px 0 0; padding-left: 20px; }
-.weg .vorteile b { color: var(--text); font-size: .9rem; }
 
 /* Fuss */
 .fuss { background: var(--leiste); color: #A9A9AF; padding: 32px 0; font-size: .9rem; }
@@ -219,7 +201,7 @@ tr:last-child td { border-bottom: 0; }
 .fuss a { color: var(--akzent-leiste); }
 
 @media screen and (max-width: 860px) {
-  .zwei, .drei, .vergleich, .nicht, .funktion, .funktion.umgekehrt, .vorher-nachher, .ablauf, .weg .vorteile { grid-template-columns: minmax(0,1fr); }
+  .zwei, .drei, .vergleich, .nicht, .funktion, .funktion.umgekehrt, .vorher-nachher { grid-template-columns: minmax(0,1fr); }
   .handys { gap: 10px; }
   .handy { border-width: 4px; border-radius: 20px; }
   .funktion.umgekehrt .text { order: 0; }
@@ -242,11 +224,10 @@ tr:last-child td { border-bottom: 0; }
   .funktion, .vergleich figure, .karte, .fenster, table, .diagramm { break-inside: avoid; }
   h1 { font-size: 26pt; } h2 { font-size: 17pt; }
   h2, .abschnitt-kopf, .kicker { break-after: avoid; }
-  .vergleich, .nicht, .drei, .handys, .ablauf, .vorher-nachher { break-inside: avoid; }
+  .vergleich, .nicht, .drei, .handys, .vorher-nachher { break-inside: avoid; }
   .handy { box-shadow: none; }
   .abschnitt > .huelle { break-inside: avoid; }
   #sync > .huelle, #sync .drei { break-inside: auto; }
-  .nachsatz { break-before: avoid; }
   #sync .drei { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .held .lead, .abschnitt-kopf p { font-size: 11pt; }
   .held .fenster { margin-top: 18px; }

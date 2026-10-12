@@ -6,7 +6,7 @@
 <title>MyLab Anleitung</title>
 <meta name="description" content="Anleitung zu MyLab: anmelden, Material finden und erfassen, nach Lektion reservieren, Kalender, Stammdaten, Historie und Papierkorb.">
 <link rel="icon" href="img/icon.png?v=2">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -16,7 +16,6 @@
     <nav class="navi">
       <a href="index.html">Vorstellung</a>
       <a href="anleitung.html" aria-current="page">Anleitung</a>
-      <a href="intranet.html">Intranet</a>
       <a href="datenschutz.html">Datenschutz</a>
     </nav>
   </div>
@@ -93,7 +92,7 @@
         <figure class="fenster"><img src="img/liste.webp" width="2560" height="1600" loading="lazy" alt="Inventarliste mit Filtern links und Kacheln rechts"></figure>
         <ol class="schritte">
           <li><b>Suchen:</b> Tipp ins Suchfeld oben. MyLab sucht in Titel, Beschreibung und Tags, die Liste passt sich laufend an.</li>
-          <li><b>Fach wählen:</b> Die Pillen <b>Alle</b>, <b>Physik</b>, <b>Biologie</b>, <b>Chemie</b> über der Liste.</li>
+          <li><b>Fach wählen:</b> Die Pillen über der Liste: <b>Alle</b> oder eine Fachschaft.</li>
           <li><b>Filtern:</b> Links nach Kategorie, Ort, Praktikum oder Tags. Die Zahl daneben zeigt, wie viele Elemente übrig bleiben; mehrere Tags gelten zusammen. Auf dem Handy öffnet <b>Filter</b> dieselbe Auswahl.</li>
           <li><b>Ansicht:</b> Oben rechts zwischen <b>Kacheln</b> und <b>Liste</b> wechseln, Grösse <b>S</b>, <b>M</b> oder <b>L</b>.</li>
         </ol>
@@ -110,9 +109,9 @@
         </div>
         <ol class="schritte">
           <li>Im Inventar auf <b>+</b> tippen.</li>
-          <li><b>Foto</b> antippen und das Gerät fotografieren. Mehrere Fotos gehen auch, das erste wird zum Titelbild.</li>
+          <li><b>Foto</b> antippen und fotografieren. Mehrere Fotos gehen auch, das erste wird zum Titelbild.</li>
           <li><b>Titel</b> eintragen, etwa «Luftkissenbahn 2 m».</li>
-          <li><b>Kategorie</b> und <b>Ort</b> wählen. MyLab schlägt die vom letzten Mal vor. Fehlt etwas: Ganz unten in der Auswahl legst du mit <b>+ Neue Kategorie …</b> bzw. <b>+ Neuer Ort …</b> gleich einen neuen Eintrag an.</li>
+          <li><b>Kategorie</b> und <b>Ort</b> wählen. Die zuletzt verwendeten stehen zuoberst. Fehlt etwas: Ganz unten in der Auswahl legst du mit <b>+ Neue Kategorie …</b> bzw. <b>+ Neuer Ort …</b> gleich einen neuen Eintrag an.</li>
           <li><b>Speichern</b>.</li>
         </ol>
         <h3>Mehr Angaben</h3>
@@ -158,7 +157,7 @@
         <h3>Wenn es schon belegt ist</h3>
         <p>MyLab zeigt sofort <b>Bereits reserviert</b> mit Namen und die <b>nächsten freien Zeiträume</b>. Ein Klick auf einen Vorschlag verschiebt deine Reservation dorthin. Hast du es mit der Kollegin abgesprochen: <b>Trotzdem eintragen</b>.</p>
         <h3>Auf- und Abbau</h3>
-        <p>Braucht ein Gerät Aufbauzeit, erscheint ein Hinweis mit <b>Lektion davor</b> und <b>Lektion danach</b>. Ein Tipp nimmt sie dazu. Ob das Zimmer dann frei ist, weiss MyLab (noch) nicht.</p>
+        <p>Braucht ein Element Aufbauzeit, erscheint ein Hinweis mit <b>Lektion davor</b> und <b>Lektion danach</b>. Ein Tipp nimmt sie dazu. Ob das Zimmer dann frei ist, weiss MyLab (noch) nicht.</p>
         <div class="handys" style="margin:22px 0">
           <div class="handy"><img src="img/h-reservieren.webp" width="780" height="1688" loading="lazy" alt="Reservieren auf dem Handy mit Hinweis auf 20 Minuten Aufbau und den Knöpfen Lektion davor und Lektion danach"></div>
         </div>
@@ -167,24 +166,24 @@
       <!-- Ändern -->
       <section id="aendern">
         <h2>Reservation ändern oder löschen</h2>
-        <p>Deine Reservationen findest du unter <b>Ich › Meine Reservationen</b>, alle eines Geräts auf seiner Seite unter <b>Kommende Reservationen</b>. Der Stift öffnet die Reservation.</p>
+        <p>Deine Reservationen findest du unter <b>Ich › Meine Reservationen</b>, alle eines Elements auf seiner Seite unter <b>Kommende Reservationen</b>. Der Stift öffnet die Reservation.</p>
         <figure class="fenster"><img src="img/ich.webp" width="2560" height="1600" loading="lazy" alt="Seite Ich mit den eigenen Reservationen"></figure>
         <ul>
-          <li><b>Deine Reservation:</b> Zeit, Stückzahl, Raum oder Notiz ändern und <b>Speichern</b>, oder <b>Löschen</b>.</li>
+          <li><b>Deine Reservation:</b> Zeit, Stückzahl, Raum oder Notiz ändern und <b>Speichern</b> oder <b>Löschen</b>.</li>
           <li><b>Reservation einer Kollegin:</b> Ändern geht, z.B. nach Absprache eine andere Lektion. Sie bekommt sofort eine Mail. <b>Löschen kann nur, wer reserviert hat.</b></li>
         </ul>
-        <p class="tipp"><b>Gerät früher zurück?</b> Dann deine Reservation kürzen oder löschen: So sehen alle, dass es wieder frei ist.</p>
+        <p class="tipp"><b>Früher zurückgebracht?</b> Dann deine Reservation kürzen oder löschen: So sehen alle, dass es wieder frei ist.</p>
       </section>
 
       <!-- Kalender -->
       <section id="kalender">
         <h2>Kalender</h2>
-        <p>Der <b>Kalender</b> zeigt eine Woche: pro Tag, welches Gerät wann bei wem ist, mit Raum, Lektion und Stückzahl.</p>
+        <p>Der <b>Kalender</b> zeigt eine Woche: pro Tag, was wann bei wem ist, mit Raum, Lektion und Stückzahl.</p>
         <figure class="fenster"><img src="img/woche.webp" width="2560" height="1600" loading="lazy" alt="Wochenübersicht mit Reservationen aus drei Fachschaften"></figure>
         <ul>
           <li>Mit den Pfeilen blättern, <b>Heute</b> springt zurück in die aktuelle Woche.</li>
           <li>Die Pillen wählen das Fach oder <b>Alle</b>.</li>
-          <li>Ein Klick auf das Gerät öffnet seine Seite, der Stift die Reservation.</li>
+          <li>Ein Klick auf ein Element öffnet seine Seite, der Stift die Reservation.</li>
         </ul>
       </section>
 
@@ -205,7 +204,7 @@
         </div>
         <ul>
           <li><b>Kategorien</b> haben drei Stufen und gehören zu einer Fachschaft.</li>
-          <li><b>Orte</b> gelten für alle: Raum › Schrank › Regal, oder wie es bei euch heisst.</li>
+          <li><b>Orte</b> gelten für alle: Raum › Schrank › Regal oder wie es bei euch heisst.</li>
           <li><b>Tags</b> kannst du umbenennen, einer anderen Fachschaft zuordnen und <b>zusammenlegen</b> (z.B. «Messgerät» und «Messgeräte»).</li>
           <li>Bei jeder <b>Fachschaft</b> kannst du eine <b>Fachschafts-Mail</b> eintragen: Sie bekommt bei Reservationen eine Kopie.</li>
         </ul>
@@ -233,7 +232,7 @@
         <h2>Mails</h2>
         <p>MyLab schickt Mails, damit niemand vor einem leeren Schrank steht:</p>
         <ul>
-          <li>Beim <b>Anlegen, Verschieben oder Löschen</b> einer Reservation an die Kolleg:innen, die das Gerät direkt davor, danach oder gleichzeitig haben, und an die Fachschafts-Adresse.</li>
+          <li>Beim <b>Anlegen, Verschieben oder Löschen</b> einer Reservation an die Kolleg:innen, die das Element direkt davor, danach oder gleichzeitig haben, und an die Fachschafts-Adresse.</li>
           <li>Ändert jemand anderes eine Reservation, bekommt die Person, der sie gehört, eine Mail mit der neuen und der alten Zeit.</li>
         </ul>
       </section>
@@ -247,7 +246,7 @@
           <dt>Der Knopf «Löschen» fehlt bei einer Reservation.</dt>
           <dd>Dann ist es die Reservation von jemand anderem: Löschen kann nur, wer sie angelegt hat. Ändern geht, die Person bekommt eine Mail.</dd>
           <dt>Beim Reservieren steht «Bereits reserviert».</dt>
-          <dd>Das Gerät ist in dieser Zeit schon ganz unterwegs. Darunter stehen die nächsten freien Zeiträume. Nach Absprache geht auch <b>Trotzdem eintragen</b>.</dd>
+          <dd>Das Element ist in dieser Zeit schon ganz unterwegs. Darunter stehen die nächsten freien Zeiträume. Nach Absprache geht auch <b>Trotzdem eintragen</b>.</dd>
           <dt>Ein Foto lädt nicht hoch.</dt>
           <dd>Bilder dürfen bis 25 MB gross sein, Dokumente 50 MB, Videos 500 MB. Bei schwachem WLAN das Foto lieber später am Computer hochladen.</dd>
           <dt>Ich habe etwas versehentlich geändert.</dt>
@@ -262,7 +261,7 @@
 
 <footer class="fuss">
   <div class="huelle">
-    <span>MyLab · Inventar und Ausleihe für die Naturwissenschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
+    <span>MyLab · Inventar und Ausleihe für die Fachschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
     <span><a href="architektur.html">Architektur</a> · <a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
   </div>
 </footer>

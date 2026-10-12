@@ -6,7 +6,7 @@
 <title>MyLab Architektur</title>
 <meta name="description" content="Wie MyLab gebaut ist: Node und SQLite auf einem kleinen Server, Web-App ohne Framework, Suche mit FTS5, Dateien lokal oder im Objektspeicher.">
 <link rel="icon" href="img/icon.png?v=2">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 <style>
   .d-box { fill: var(--karte); stroke: var(--linie); }
   .d-app { fill: var(--akzent-weich); stroke: var(--akzent); }
@@ -28,7 +28,6 @@
     <nav class="navi">
       <a href="index.html">Vorstellung</a>
       <a href="anleitung.html">Anleitung</a>
-      <a href="intranet.html">Intranet</a>
       <a href="datenschutz.html">Datenschutz</a>
     </nav>
   </div>
@@ -38,7 +37,7 @@
   <div class="huelle">
     <span class="pille indigo">Architektur</span>
     <h1 style="margin-top:14px">Wie MyLab gebaut ist</h1>
-    <p>Für alle, die es genauer wissen wollen. Anders als MySchool ist MyLab keine Mac-App, sondern eine Web-App auf einem Server: Die Sammlung gehört allen drei Fachschaften und muss auf jedem Gerät gleich aussehen.</p>
+    <p>Für alle, die es genauer wissen wollen. Anders als MySchool ist MyLab keine Mac-App, sondern eine Web-App auf einem Server: Die Sammlung gehört allen Fachschaften und muss auf jedem Gerät gleich aussehen.</p>
 
     <h2>Grundsätze</h2>
     <ul>
@@ -124,7 +123,7 @@
 
     <h2>Reservieren</h2>
     <p>Zeiten sind lokale Schulzeit ohne Zeitzonen-Umrechnung, das Lektionsraster (elf Lektionen à 45 Minuten) steht fest in der App. Eine einzige Funktion auf dem Server prüft Konflikte: Sie zählt, wie viele Stück zu jedem Zeitpunkt gleichzeitig unterwegs sind, und vergleicht mit der Anzahl des Elements. Bei Konflikt sucht sie die nächsten freien Zeiträume derselben Länge und überspringt Wochenenden.</p>
-    <p>Auf- und Abbauzeit sind bewusst nur ein Richtwert im Dialog, keine Sperre. Ob das Zimmer vorher frei ist, weiss MyLab erst mit dem <a href="intranet.html">Intranet-Sync</a>.</p>
+    <p>Auf- und Abbauzeit sind bewusst nur ein Richtwert im Dialog, keine Sperre. Ob das Zimmer vorher frei ist, weiss MyLab erst mit dem Intranet-Sync (siehe <a href="datenschutz.html#intranet">Datenschutz</a>).</p>
 
     <h2>Dateien</h2>
     <ul>
@@ -155,7 +154,7 @@
 
 <footer class="fuss">
   <div class="huelle">
-    <span>MyLab · Inventar und Ausleihe für die Naturwissenschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
+    <span>MyLab · Inventar und Ausleihe für die Fachschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
     <span><a href="architektur.html">Architektur</a> · <a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
   </div>
 </footer>

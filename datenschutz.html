@@ -6,7 +6,7 @@
 <title>MyLab Datenschutz</title>
 <meta name="description" content="Welche Daten MyLab speichert, welche Verbindungen es nach aussen gibt und was bewusst nicht dazugehört.">
 <link rel="icon" href="img/icon.png?v=2">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 <style>
   .d-zone { fill: var(--grund); stroke: var(--linie); }
   .d-box { fill: var(--karte); stroke: var(--linie); }
@@ -29,7 +29,6 @@
     <nav class="navi">
       <a href="index.html">Vorstellung</a>
       <a href="anleitung.html">Anleitung</a>
-      <a href="intranet.html">Intranet</a>
       <a href="datenschutz.html" aria-current="page">Datenschutz</a>
     </nav>
   </div>
@@ -95,9 +94,9 @@
         <thead><tr><th>Ziel</th><th>Was geht raus</th><th>Wann</th><th>Bemerkung</th></tr></thead>
         <tbody>
           <tr><td><strong>Microsoft (Entra ID)</strong></td><td>Weiterleitung zur Anmeldung; zurück kommen Name und Mailadresse</td><td>beim Login</td><td>nur die Berechtigungen <code>openid profile email</code>; auf Wunsch nur Mailadressen der Schule</td></tr>
-          <tr><td><strong>Mailserver</strong></td><td>Mail mit Gerät, Zeit, Person, Raum und Notiz einer Reservation</td><td>Reservation anlegen, verschieben, löschen</td><td>an die Kolleg:innen direkt davor, danach und gleichzeitig sowie an die Fachschafts-Adresse</td></tr>
+          <tr><td><strong>Mailserver</strong></td><td>Mail mit Element, Zeit, Person, Raum und Notiz einer Reservation</td><td>Reservation anlegen, verschieben, löschen</td><td>an die Kolleg:innen direkt davor, danach und gleichzeitig sowie an die Fachschafts-Adresse</td></tr>
           <tr><td><strong>Objektspeicher</strong></td><td>hochgeladene Fotos, Videos und Dokumente</td><td>beim Hochladen</td><td>nur falls eingerichtet, sonst auf der Server-Platte; privat, Zugriff über zeitlich begrenzte Links</td></tr>
-          <tr><td><strong>MySchool / Intranet</strong></td><td>nichts; MyLab empfängt die eigenen Lektionen</td><td>geplant, siehe <a href="intranet.html">Intranet</a></td><td>freiwillig je Lehrperson</td></tr>
+          <tr><td><strong>MySchool / Intranet</strong></td><td>nichts; MyLab empfängt die eigenen Lektionen</td><td>geplant, siehe <a href="#intranet">unten</a></td><td>freiwillig je Lehrperson</td></tr>
         </tbody>
       </table>
     </div>
@@ -105,7 +104,7 @@
     <h2>Was MyLab speichert</h2>
     <p><strong>Zu Personen:</strong> Name, Mailadresse, Fachschaft (falls gewählt), Zeit der Registrierung und des letzten Logins. Dazu, wer welche Reservation angelegt und wer welches Element erstellt oder geändert hat.</p>
     <p><strong>Zum Material:</strong> Elemente mit Beschreibung, Ort, Kategorie, Tags, Praktika und Anhängen; Reservationen mit Zeit, Stückzahl, Raum, Lektion und Notiz; die Historie aller Änderungen.</p>
-    <p><strong>Im Browser:</strong> ein signiertes Anmelde-Cookie, die gewählte Ansicht, das Farbschema sowie die zuletzt verwendete Kategorie und der Ort fürs Erfassen. Die App selbst liegt fürs schnelle Laden im Zwischenspeicher, die Daten nicht.</p>
+    <p><strong>Im Browser:</strong> ein signiertes Anmelde-Cookie, die gewählte Ansicht, das Farbschema sowie die zuletzt verwendeten Kategorien und Orte fürs Erfassen. Die App selbst liegt fürs schnelle Laden im Zwischenspeicher, die Daten nicht.</p>
 
     <h2>Was bewusst nicht dazugehört</h2>
     <ul>
@@ -114,6 +113,23 @@
       <li><strong>Keine Drittdienste.</strong> Keine Telemetrie, keine Analyse, keine Werbung, keine Schriften oder Skripte von fremden Servern.</li>
       <li><strong>Kein Intranet-Passwort auf dem Server</strong>, solange die Lektionen über MySchool kommen.</li>
     </ul>
+
+    <h2 id="intranet">Mit dem Intranet <span class="pille indigo">geplant</span></h2>
+    <p>Gebaut ist die Anbindung noch nicht, sie käme nach dem Pilot. Die Daten kämen über MySchool, das sie schon heute aus dem Intranet holt: Es schickte nur deine eigenen Lektionen an MyLab, mit einem persönlichen Schlüssel aus «Ich». Ob du das willst, entscheidest du selbst. MyLab läuft auch ohne und schreibt nie etwas ins Intranet.</p>
+    <div class="tabelle">
+      <table>
+        <thead><tr><th>Daten</th><th>Wofür</th><th>In MyLab gespeichert</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Eigene Lektionen</strong>: Datum, Zeit, Zimmer, Klasse oder Kurs, Ausfall</td><td>Reservieren aus der Lektion, Serien, Ausfälle</td><td>ja, nur die eigenen, einige Wochen voraus</td></tr>
+          <tr><td><strong>Schulkalender</strong>: Ferien, Feiertage, Sondertage</td><td>Vorschläge, Serien</td><td>ja, für alle gleich</td></tr>
+          <tr><td><strong>Zimmerbelegung</strong>: frei oder belegt je Lektion</td><td>Hinweis zum Auf- und Abbau</td><td>nein, nur beim Reservieren abgefragt</td></tr>
+          <tr><td><strong>Klassengrösse</strong> als Zahl</td><td>Vorschlag für die Stückzahl</td><td>nur die Zahl, keine Namen</td></tr>
+          <tr><td><strong>Fachschaft</strong> der Lehrperson</td><td>Standard-Fach, Fachschafts-Mail</td><td>ja</td></tr>
+          <tr><td><strong>Stellvertretungen</strong></td><td>Stellvertretung sieht die Reservation</td><td>solange die Reservation läuft</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px">Nie übertragen würden Namen, Fotos, Kontaktdaten, Noten oder Absenzen von Schüler:innen. Erlaubt die Schule später einen eigenen Zugang, könnte MyLab dieselben Daten auch selbst abfragen. Dann hätten alle diese Daten, auch ohne MySchool.</p>
 
     <h2>Sicherheit</h2>
     <ul>
@@ -126,7 +142,7 @@
     <ul>
       <li>Gelöschte Elemente bleiben im Papierkorb, bis jemand sie dort endgültig löscht. Dann verschwinden auch ihre Dateien.</li>
       <li>Die Historie bleibt, solange das Element existiert.</li>
-      <li>Vergangene Reservationen bleiben stehen, damit nachvollziehbar ist, wer ein Gerät zuletzt hatte.</li>
+      <li>Vergangene Reservationen bleiben stehen, damit nachvollziehbar ist, wer etwas zuletzt hatte.</li>
       <li>Wer die Schule verlässt, kann sich nicht mehr anmelden. Das Konto lösche ich auf Wunsch gerne.</li>
     </ul>
   </div>
@@ -134,7 +150,7 @@
 
 <footer class="fuss">
   <div class="huelle">
-    <span>MyLab · Inventar und Ausleihe für die Naturwissenschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
+    <span>MyLab · Inventar und Ausleihe für die Fachschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
     <span><a href="architektur.html">Architektur</a> · <a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
   </div>
 </footer>

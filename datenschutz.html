@@ -42,7 +42,7 @@
 
     <h2>Überblick</h2>
     <div class="diagramm">
-      <svg viewBox="0 0 860 420" role="img" aria-label="Datenfluss: Browser und Handy sprechen mit dem MyLab-Server in der Schweiz oder EU. Der Server hat Datenbank und Dateispeicher. Verbindungen nach aussen gehen zu Microsoft für die Anmeldung, zu einem Mailserver für Reservations-Mails, optional zu einem Objektspeicher für Dateien und, geplant, zu MySchool oder dem Intranet für Lektionen.">
+      <svg viewBox="0 0 860 420" role="img" aria-label="Datenfluss: Browser und Handy sprechen mit dem MyLab-Server in der Schweiz oder EU. Der Server hat Datenbank und Dateispeicher. Verbindungen nach aussen gehen zu Microsoft für die Anmeldung, optional zu einem Objektspeicher für Dateien und, geplant, zu MySchool oder dem Intranet für Lektionen.">
         <rect class="d-box" x="20" y="150" width="170" height="80" rx="14"/>
         <text class="d-t" x="38" y="182">Browser, Handy</text>
         <text class="d-s" x="38" y="204">Lehrpersonen</text>
@@ -68,15 +68,10 @@
         <text class="d-s" x="638" y="88">Anmeldung mit Schulkonto</text>
         <path class="d-l" d="M550 72 H620"/>
 
-        <rect class="d-ext" x="620" y="124" width="230" height="64" rx="12"/>
-        <text class="d-t" x="638" y="152">Mailserver</text>
-        <text class="d-s" x="638" y="172">Reservations-Mails</text>
-        <path class="d-l" d="M550 156 H620"/>
-
-        <rect class="d-opt" x="620" y="208" width="230" height="64" rx="12"/>
-        <text class="d-t" x="638" y="236">Objektspeicher</text>
-        <text class="d-s" x="638" y="256">Dateien, falls eingerichtet</text>
-        <path class="d-lo" d="M550 270 C580 270 590 240 620 240"/>
+        <rect class="d-opt" x="620" y="182" width="230" height="64" rx="12"/>
+        <text class="d-t" x="638" y="210">Objektspeicher</text>
+        <text class="d-s" x="638" y="230">Dateien, falls eingerichtet</text>
+        <path class="d-lo" d="M550 270 C580 270 590 214 620 214"/>
 
         <rect class="d-opt" x="620" y="292" width="230" height="64" rx="12"/>
         <text class="d-t" x="638" y="320">MySchool / Intranet</text>
@@ -94,8 +89,7 @@
         <thead><tr><th>Ziel</th><th>Was geht raus</th><th>Wann</th><th>Bemerkung</th></tr></thead>
         <tbody>
           <tr><td><strong>Microsoft (Entra ID)</strong></td><td>Weiterleitung zur Anmeldung; zurück kommen Name und Mailadresse</td><td>beim Login</td><td>nur die Berechtigungen <code>openid profile email</code>; auf Wunsch nur Mailadressen der Schule</td></tr>
-          <tr><td><strong>Mailserver</strong></td><td>Mail mit Element, Zeit, Person, Raum und Notiz einer Reservation</td><td>Reservation anlegen, verschieben, löschen</td><td>an die Kolleg:innen direkt davor, danach und gleichzeitig sowie an die Fachschafts-Adresse</td></tr>
-          <tr><td><strong>Objektspeicher</strong></td><td>hochgeladene Fotos, Videos und Dokumente</td><td>beim Hochladen</td><td>nur falls eingerichtet, sonst auf der Server-Platte; privat, Zugriff über zeitlich begrenzte Links</td></tr>
+                    <tr><td><strong>Objektspeicher</strong></td><td>hochgeladene Fotos, Videos und Dokumente</td><td>beim Hochladen</td><td>nur falls eingerichtet, sonst auf der Server-Platte; privat, Zugriff über zeitlich begrenzte Links</td></tr>
           <tr><td><strong>MySchool / Intranet</strong></td><td>nichts; MyLab empfängt die eigenen Lektionen</td><td>geplant, siehe <a href="#intranet">unten</a></td><td>freiwillig je Lehrperson</td></tr>
         </tbody>
       </table>
@@ -110,6 +104,7 @@
     <ul>
       <li><strong>Keine Schülerdaten.</strong> Auch mit dem geplanten Sync kommt höchstens die Grösse einer Klasse als Zahl dazu.</li>
       <li><strong>Keine Passwörter.</strong> Die Anmeldung läuft über Microsoft, MyLab sieht dein Passwort nie.</li>
+      <li><strong>Keine Mails vom Server.</strong> MyLab verschickt selbst nichts. «Mail …» öffnet dein eigenes Mailprogramm mit vorbereitetem Text und gesendet wird erst dort.</li>
       <li><strong>Keine Drittdienste.</strong> Keine Telemetrie, keine Analyse, keine Werbung, keine Schriften oder Skripte von fremden Servern.</li>
       <li><strong>Kein Intranet-Passwort auf dem Server</strong>, solange die Lektionen über MySchool kommen.</li>
     </ul>
@@ -124,7 +119,7 @@
           <tr><td><strong>Schulkalender</strong>: Ferien, Feiertage, Sondertage</td><td>Vorschläge, Serien</td><td>ja, für alle gleich</td></tr>
           <tr><td><strong>Zimmerbelegung</strong>: frei oder belegt je Lektion</td><td>Hinweis zum Auf- und Abbau</td><td>nein, nur beim Reservieren abgefragt</td></tr>
           <tr><td><strong>Klassengrösse</strong> als Zahl</td><td>Vorschlag für die Stückzahl</td><td>nur die Zahl, keine Namen</td></tr>
-          <tr><td><strong>Fachschaft</strong> der Lehrperson</td><td>Standard-Fach, Fachschafts-Mail</td><td>ja</td></tr>
+          <tr><td><strong>Fachschaft</strong> der Lehrperson</td><td>Standard-Fach</td><td>ja</td></tr>
           <tr><td><strong>Stellvertretungen</strong></td><td>Stellvertretung sieht die Reservation</td><td>solange die Reservation läuft</td></tr>
         </tbody>
       </table>

@@ -49,7 +49,7 @@
 
     <h2>Bausteine</h2>
     <div class="diagramm">
-      <svg viewBox="0 0 860 400" role="img" aria-label="Bausteine: Browser und Handy sprechen über Caddy mit HTTPS mit der Node-App. Die App nutzt SQLite mit Volltextsuche und einen Speicher-Adapter für Dateien, lokal oder S3. Sie meldet über Microsoft an und schickt Mails per SMTP. Geplant: ein Lektionen-Adapter.">
+      <svg viewBox="0 0 860 400" role="img" aria-label="Bausteine: Browser und Handy sprechen über Caddy mit HTTPS mit der Node-App. Die App nutzt SQLite mit Volltextsuche und einen Speicher-Adapter für Dateien, lokal oder S3. Sie meldet über Microsoft an. Geplant: ein Lektionen-Adapter.">
         <defs>
           <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--text-3)"/></marker>
           <marker id="pfeilA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--akzent)"/></marker>
@@ -67,7 +67,7 @@
         <rect class="d-app" x="280" y="160" width="260" height="90" rx="14"/>
         <text class="d-t" x="300" y="192">MyLab (Node, Express)</text>
         <text class="d-s" x="300" y="214">Inventar, Suche, Reservation,</text>
-        <text class="d-s" x="300" y="232">Konfliktprüfung, Mails</text>
+        <text class="d-s" x="300" y="232">Konfliktprüfung</text>
         <path class="d-la" d="M200 205 H278"/>
 
         <rect class="d-box" x="280" y="300" width="120" height="76" rx="14"/>
@@ -85,15 +85,10 @@
         <text class="d-s" x="640" y="78">Anmeldung (OpenID Connect)</text>
         <path class="d-l" d="M540 180 C580 180 590 70 618 66"/>
 
-        <rect class="d-ext" x="620" y="120" width="220" height="64" rx="14"/>
-        <text class="d-t" x="640" y="148">Mailserver</text>
-        <text class="d-s" x="640" y="168">SMTP</text>
-        <path class="d-l" d="M540 200 C580 200 590 155 618 153"/>
-
-        <rect class="d-opt" x="620" y="220" width="220" height="64" rx="14"/>
-        <text class="d-t" x="640" y="248">Lektionen-Adapter</text>
-        <text class="d-s" x="640" y="268">MySchool, Intranet, iCal (geplant)</text>
-        <path class="d-lo" d="M620 250 H542"/>
+        <rect class="d-opt" x="620" y="170" width="220" height="64" rx="14"/>
+        <text class="d-t" x="640" y="198">Lektionen-Adapter</text>
+        <text class="d-s" x="640" y="218">MySchool, Intranet, iCal (geplant)</text>
+        <path class="d-lo" d="M620 205 H542"/>
 
         <rect class="d-ext" x="620" y="310" width="220" height="64" rx="14"/>
         <text class="d-t" x="640" y="338">sharp, ffmpeg</text>
@@ -136,7 +131,7 @@
     <h2>Betrieb</h2>
     <ul>
       <li>Zwei Container: die App und <strong>Caddy</strong>, das das HTTPS-Zertifikat selbst holt und erneuert.</li>
-      <li>Alle Einstellungen über Umgebungsvariablen: Adresse, Anmeldung, Speicher, Mail. Die Login-Art erkennt die App beim Start.</li>
+      <li>Alle Einstellungen über Umgebungsvariablen: Adresse, Anmeldung, Speicher. Die Login-Art erkennt die App beim Start.</li>
       <li>Ein Skript sichert Datenbank und Dateien, ein zweites spielt sie zurück; ein drittes bringt neue Versionen auf den Server.</li>
     </ul>
 

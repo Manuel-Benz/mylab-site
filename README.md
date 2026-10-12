@@ -1,6 +1,6 @@
 # MyLab – Website
 
-Vorstellung, Anleitung, Datenschutz und Architektur von MyLab, dem Inventar- und
+Vorstellung, Anleitung und Datenschutz von MyLab, dem Inventar- und
 Ausleihsystem für die Sammlungen der Fachschaften. Gedacht für GitHub Pages,
 analog zur MySchool-Website.
 

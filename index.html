@@ -29,7 +29,7 @@
       <p class="lead">Was haben wir, wo steht es und ist es am Mittwoch frei? MyLab macht das Material der Fachschaften durchsuch- und reservierbar, am Computer und auf dem Handy.</p>
       <div class="knoepfe">
         <a class="knopf" href="#funktionen">Was MyLab kann</a>
-        <a class="knopf leise" href="#sync">Was das Intranet bringt</a>
+        <a class="knopf leise" href="#sync">Was noch kommt</a>
         <a class="knopf leise" href="MyLab-Vorstellung.pdf">Als PDF</a>
       </div>
       <div class="fenster"><img src="img/liste.webp" width="2560" height="1600" alt="Die Inventarliste der Physik: Kacheln mit Bild, Titel und Ort, links Filter nach Kategorie, Ort, Praktikum und Tags mit Zählern."></div>
@@ -41,7 +41,7 @@
       <div class="abschnitt-kopf">
         <div class="kicker">Funktionen</div>
         <h2>Was MyLab kann</h2>
-        <p>Jedes Sammlungsstück, ob Gerät, Modell, Präparat oder Karte, ist in MyLab ein Element mit eigener Seite: mit Foto, Ort und Belegung. MyLab läuft im Browser, angemeldet wird mit dem Schulkonto. Schülerdaten kennt es keine.</p>
+        <p>Jedes Sammlungsstück, ob Gerät, Modell, Präparat oder Karte, ist in MyLab ein Element mit eigener Seite: mit Foto, Ort und Belegung. MyLab läuft im Browser, die Anmeldung mit dem Schulkonto ist noch in Abklärung. Pflegen dürfen alle, Rollen und Freigaben gibt es keine. Schülerdaten kennt MyLab nicht.</p>
       </div>
 
       <div class="funktion">
@@ -69,6 +69,7 @@
             <li>Aufbauanleitung direkt in der Beschreibung, mit Formatierung</li>
             <li>Ähnliche Elemente verknüpfen, z.B. Luftkissenbahn und Lichtschranken</li>
             <li>Auf- und Abbauzeit als Richtwert fürs Reservieren</li>
+            <li>Jede Änderung steht mit Person und Zeit in der Historie und lässt sich einzeln rückgängig machen</li>
           </ul>
         </div>
         <div class="fenster"><img src="img/detail.webp" width="2560" height="1600" alt="Detailseite der Luftkissenbahn mit Bild, Ort, Auf- und Abbauzeit, daneben Belegungskalender und kommende Reservationen"></div>
@@ -99,6 +100,7 @@
           <ul>
             <li>Reservationen von Kolleg:innen stehen als Blöcke im Raster</li>
             <li>Bei mehreren Stück: «Noch 2 von 6 frei»</li>
+            <li>Ändern und löschen kann eine Reservation nur, wer sie angelegt hat</li>
             <li>Schon belegt? MyLab zeigt den nächsten freien Termin, ein Klick verschiebt.</li>
             <li>Eine Mail zur Reservation, z.B. an die Assistenz oder wer das Element davor hat: Element, Zeit und Zimmer stehen schon drin</li>
           </ul>
@@ -136,9 +138,10 @@
       <div class="funktion">
         <div class="text">
           <span class="pille messing">Ich</span>
-          <h3 style="margin-top:12px">Deine Reservationen auf einen Blick</h3>
-          <p>Deine Reservationen zum Bearbeiten und die Elemente, die du zuletzt geändert hast.</p>
+          <h3 style="margin-top:12px">Dein Profil</h3>
+          <p>Alles, was dich betrifft: deine Reservationen, die Elemente, die du zuletzt geändert hast, und deine Einstellungen.</p>
           <ul>
+            <li>Eigene Reservationen ändern oder löschen</li>
             <li>Deine Fachschaft als Standard fürs Inventar, den Kalender und das Erfassen</li>
             <li>Farbschema pro Gerät, hell oder dunkel wie das Gerät</li>
             <li>Der Papierkorb mit allem, was gelöscht wurde</li>
@@ -149,82 +152,37 @@
     </div>
   </section>
 
-  <section class="abschnitt hell">
-    <div class="huelle">
-      <div class="abschnitt-kopf">
-        <div class="kicker">Ohne Rollen</div>
-        <h2>Alle pflegen mit, nichts geht verloren</h2>
-        <p>Freigaben und Rollen bremsen eine Sammlung, die alle pflegen sollen. Darum dürfen alle das Inventar bearbeiten und dafür ist alles nachvollziehbar. Nur die eigene Reservation gehört einem selbst.</p>
-      </div>
-      <div class="drei">
-        <div class="karte">
-          <div class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 109-9 9.7 9.7 0 00-6.7 2.8L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3>Historie mit Rückgängig</h3>
-          <p>Jede Änderung steht mit Person und Zeit in der Historie. Einzelne Felder lassen sich mit einem Klick zurücksetzen.</p>
-        </div>
-        <div class="karte indigo">
-          <div class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></div>
-          <h3>Papierkorb</h3>
-          <p>Gelöschte Elemente landen im Papierkorb und lassen sich wiederherstellen. Weg sind sie erst, wenn jemand sie dort endgültig löscht.</p>
-        </div>
-        <div class="karte gruen">
-          <div class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-          <h3>Reservationen bleiben stehen</h3>
-          <p>Ändern und löschen kann eine Reservation nur, wer sie angelegt hat. Alle anderen sehen sie und können der Person mit einem Klick schreiben.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="abschnitt seitenumbruch" id="sync">
+  
+  <section class="abschnitt hell seitenumbruch" id="sync">
     <div class="huelle">
       <div class="abschnitt-kopf">
         <div class="kicker">Ausblick</div>
-        <h2>Was das Intranet dazubringt</h2>
-        <p>Heute kennt MyLab nur das fixe Lektionsraster. Das Intranet weiss, wann du wo welche Klasse hast, welche Lektionen ausfallen und wann Ferien sind. <a href="https://manuel-benz.github.io/myschool-site/">MySchool</a> holt diese Daten schon heute und könnte deine Lektionen an MyLab schicken, ohne Schülerdaten und ohne Intranet-Passwort auf dem Server.</p>
+        <h2>Mit deinem Stundenplan <span class="pille messing" style="vertical-align:middle">in Abklärung</span></h2>
+        <p>Heute kennt MyLab nur das fixe Lektionsraster. Kennt es deinen Stundenplan, wird Reservieren noch einfacher. Ob es ihn bekommen darf, ist noch in Abklärung.</p>
       </div>
 
       <div class="vorher-nachher">
         <div class="karte">
-          <h3><span class="pille messing">Heute</span> MyLab allein</h3>
+          <h3><span class="pille messing">Heute</span> Fixes Lektionsraster</h3>
           <ul>
-            <li>Datum wählen, Lektion antippen, Zimmer und Klasse von Hand eintragen</li>
-            <li>Ob das Zimmer vor dem Aufbau frei ist, weiss MyLab nicht</li>
+            <li>Lektion antippen, Zimmer und Klasse von Hand eintragen</li>
             <li>Vorschläge überspringen Wochenenden, Ferien aber nicht</li>
-            <li>Fällt eine Lektion aus, bleibt das Material trotzdem blockiert</li>
-            <li>Die Stückzahl schätzt du selbst</li>
+            <li>Fällt eine Lektion aus, bleibt das Material blockiert</li>
+            <li>Jede Woche einzeln reservieren</li>
           </ul>
         </div>
         <div class="karte mit-sync">
-          <h3><span class="pille">Mit Intranet</span> MyLab und MySchool</h3>
+          <h3><span class="pille">Später</span> Mit deinem Stundenplan</h3>
           <ul>
-            <li>Eigene Lektion antippen: Datum, Zeit, Zimmer und Klasse stehen schon da</li>
-            <li>Ist das Zimmer vorher frei, schlägt MyLab die Lektion davor für den Aufbau vor</li>
+            <li>Eigene Lektion antippen: Zeit, Zimmer und Klasse stehen schon da</li>
             <li>Ferien, Feiertage und Sondertage zählen mit</li>
             <li>Fällt eine Lektion aus, wird ihr Material wieder frei</li>
-            <li>Aus der Klassengrösse ein Vorschlag für die Stückzahl, ohne Namen</li>
-            <li>Eine ganze Serie reservieren, z.B. jede Mittwochs-Lektion der 4c bis zu den Sportferien</li>
-            <li>Ein Praktikum einem Kurs zuordnen und alles dafür zusammen reservieren</li>
+            <li>Eine ganze Serie auf einmal, z.B. jede Mittwochs-Lektion der 4c bis zu den Sportferien</li>
           </ul>
         </div>
       </div>
 
-      <p style="color:var(--text-2)">Umgekehrt stünde in MySchool unter «Heute» bei der Lektion, was reserviert ist und wo es steht, und im Kursplan führte eine Materialzeile direkt zum Element in MyLab. Gebaut ist das noch nicht, es kommt nach dem Pilot. Welche Daten dafür fliessen würden, steht unter <a href="datenschutz.html#intranet">Datenschutz</a>.</p>
-    </div>
-  </section>
-
-  <section class="abschnitt hell">
-    <div class="huelle">
-      <div class="abschnitt-kopf">
-        <div class="kicker">Abgrenzung</div>
-        <h2>Was MyLab bewusst nicht ist</h2>
-      </div>
-      <div class="nicht">
-        <div><span class="x">×</span><p><b>Kein Freigabe-Workflow</b><span>Keine Rollen, keine Genehmigung: Reserviert ist, was eingetragen ist. Konflikte zeigt MyLab an, verbieten tut es sie nicht.</span></p></div>
-        <div><span class="x">×</span><p><b>Kein Ersatz fürs Intranet</b><span>Stundenplan, Zimmer und Kalender bleiben im Intranet. Hineinschreiben wird MyLab dort nichts.</span></p></div>
-        <div><span class="x">×</span><p><b>Keine Buchhaltung</b><span>Keine Bestellungen, Preise oder Abschreibungen. Es geht ums Finden und Ausleihen.</span></p></div>
-        <div><span class="x">×</span><p><b>Kein Produkt einer Softwarefirma</b><span>Ich bin Lehrer und habe MyLab für unsere Fachschaften gebaut, abgestimmt auf unser Lektionsraster.</span></p></div>
-      </div>
+      <p style="color:var(--text-2)">Gebaut ist das noch nicht. Welche Daten dafür fliessen würden, steht unter <a href="datenschutz.html#intranet">Datenschutz</a>.</p>
     </div>
   </section>
 
@@ -233,12 +191,12 @@
       <div>
         <div class="kicker">Stand</div>
         <h2>Bereit für den Pilot</h2>
-        <p style="margin-top:16px;color:var(--text-2)">Inventar, Reservation und Stammdaten sind gebaut und getestet. Als Nächstes probieren drei Kolleg:innen der Physik MyLab zwei Wochen lang aus, danach kommen Biologie und Chemie dazu und gerne weitere Fachschaften mit einer Sammlung, z.B. Geografie. Die Anbindung ans Intranet folgt später. Rückmeldungen und Ideen nehme ich gerne entgegen 😊</p>
+        <p style="margin-top:16px;color:var(--text-2)">Ich bin Lehrer und habe MyLab für unsere Fachschaften gebaut. Inventar, Reservation und Stammdaten sind fertig. Als Nächstes kommt ein Test im Schulalltag, danach sind alle Fachschaften mit einer Sammlung willkommen. Wo MyLab läuft und ob es den Stundenplan kennen darf, ist noch in Abklärung. Rückmeldungen und Ideen nehme ich gerne entgegen 😊</p>
       </div>
       <div>
         <div class="kicker">Mehr erfahren</div>
         <h2>Anleitung und Datenschutz</h2>
-        <p style="margin-top:16px;color:var(--text-2)">Wie MyLab bedient wird, zeigt die <a href="anleitung.html">Anleitung</a>. Was MyLab speichert und wohin Verbindungen gehen, steht unter <a href="datenschutz.html">Datenschutz</a>, wie es technisch aufgebaut ist unter <a href="architektur.html">Architektur</a>.</p>
+        <p style="margin-top:16px;color:var(--text-2)">Wie MyLab bedient wird, zeigt die <a href="anleitung.html">Anleitung</a>. Was MyLab speichert und wohin Verbindungen gehen, steht unter <a href="datenschutz.html">Datenschutz</a>.</p>
       </div>
     </div>
   </section>
@@ -247,7 +205,7 @@
 <footer class="fuss">
   <div class="huelle">
     <span>MyLab · Inventar und Ausleihe für die Fachschaften · Alle Bilder: Demo-Version mit erfundenen Daten</span>
-    <span><a href="architektur.html">Architektur</a> · <a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
+    <span><a href="MyLab-Vorstellung.pdf">Als PDF</a></span>
   </div>
 </footer>
 </body>
